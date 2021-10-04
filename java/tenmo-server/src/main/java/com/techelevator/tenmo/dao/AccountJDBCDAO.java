@@ -12,7 +12,7 @@ public class AccountJDBCDAO implements AccountDAO {
 
     private JdbcTemplate jdbcTemplate;
 
-    // Explain that ds is automatically wired in on account of
+    // ds is automatically wired in on account of
     // what you have in application.properties
 
     public AccountJDBCDAO(DataSource ds) {
@@ -24,7 +24,7 @@ public class AccountJDBCDAO implements AccountDAO {
 
         Balance balance = new Balance();
 
-        // Mention that this is obviously from the database, and we're just hardcoding this
+        // from the database, and I had to just hardcoding this
         // for now.
 
         balance.setBalance(new BigDecimal("200"));
